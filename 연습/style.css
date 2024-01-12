@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#wrapper {
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+header {
+  width: 300px;
+  position: relative;
+}
+img {
+  width: 300px;
+  background-image: url("./img/iu.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
