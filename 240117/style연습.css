@@ -1,0 +1,20 @@
+/*header*/
+@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+
+#title {
+  font-family: "Coiny", system-ui;
+}
+#header {
+  position: relative;
+  width: 960px;
+  height: 160px;
+  border: 1px solid #f00;
+}
+#main_gnb {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+#main_lnb {
+  position: absolute;
+}

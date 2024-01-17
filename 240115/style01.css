@@ -1,0 +1,9 @@
+h1:first-of-type {
+  color: brown;
+}
+h2:last-of-type {
+  color: aquamarine;
+}
+h3:first-of-type {
+  color: blueviolet;
+}
