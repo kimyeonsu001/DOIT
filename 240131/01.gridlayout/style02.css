@@ -1,0 +1,15 @@
+.parent {
+  background: darkgoldenrod;
+  border: 5px solid #000;
+}
+.parent div {
+  border-bottom: 1px solid blue;
+  grid-column: auto auto auto;
+}
+
+.focus {
+  background: royalblue;
+  color: #fff;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}

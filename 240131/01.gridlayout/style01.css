@@ -1,0 +1,26 @@
+.parent {
+  border: 5px solid #000;
+  background: khaki;
+  height: 300px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.parent div {
+  background: deepskyblue;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+.item {
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  /* grid-column: 1 / span 2; <-보통이런식으로 축약해서 씀 */
+  /* grid-column-start: 2;
+  grid-column-end: 4; */
+  /* grid-row-start: 1;
+  grid-row-end: 5; */
+  grid-column-start: 2;
+  grid-column-end: ;
+  grid-row: 1/5;
+}

@@ -1,0 +1,11 @@
+.face-gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /*최소300px 최대1fr*/
+  gap: 5px;
+}
+.face-gallery img {
+  width: 100%;
+}
