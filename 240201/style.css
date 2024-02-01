@@ -1,0 +1,62 @@
+.box {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.box h1 {
+  padding-left: 50%;
+}
+
+.top {
+  margin: 60px auto;
+  width: 50%;
+  height: 50%;
+}
+
+.top1 {
+  margin: 0 auto;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  border-radius: 50px 0 0 50px;
+}
+
+.top1::before {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #ff7272;
+  border-radius: 0 50px 50px 0;
+  left: 100px;
+  content: "";
+}
+
+.mid {
+  margin: -377px auto;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: rgb(95, 36, 255);
+  border-radius: 50px 0 0 50px;
+}
+
+.mid1::before {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #23aeff;
+  border-radius: 50px;
+  left: 100px;
+  content: "";
+}
+
+.bottom {
+  margin: 377px auto;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: rgb(62, 140, 28);
+  border-radius: 50px 0 50px 50px;
+}/*# sourceMappingURL=style.css.map */

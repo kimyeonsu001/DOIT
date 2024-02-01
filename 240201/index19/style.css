@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(rgb(0, 145, 255), rgb(174, 68, 68) 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heart-beat {
+  position: relative;
+  animation: 0.8s beat infinite;
+}
+
+.heart {
+  opacity: 30%;
+  position: relative;
+  background-color: #fff;
+  display: inline-block;
+  height: 60px;
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+  width: 60px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #fff;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  width: 60px;
+}
+
+.heart:before {
+  top: -30px;
+  left: 0;
+}
+
+.heart:after {
+  left: 30px;
+  top: 0;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=style.css.map */
