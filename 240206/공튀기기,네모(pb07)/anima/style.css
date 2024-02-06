@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.stoplight {
+  width: 400px;
+  height: 100px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  margin-top: 30%;
+}
+.stoplight span:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: yellow;
+}
