@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/f542a46a65.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--jQuery-->
+    <script src="./js/jquery-2.1.4.js"></script>
+    <!--page scroll effect-->
+    <link rel="stylesheet" href="./js/velocity/velocity.css" />
+    <script src="./js/velocity/modernizr.js"></script>
+    <script src="./js/velocity/main.js"></script>
+    <script src="./js/velocity/velocity.min.js"></script>
+    <script src="./js/velocity/velocity.ui.min.js"></script>
+    <!--slickslider-->
+    <link rel="stylesheet" href="./js/slick/slick.css" />
+    <link rel="stylesheet" href="./js/slick/slick-theme.css" />
+    <script src="./js/slick/slick.js"></script>
+    <!--featherlight-->
+    <link rel="stylesheet" href="./js/featherlight/featherlight.css" />
+    <script src="./js/featherlight/featherlight.js"></script>
+    <!--scrollto-->
+    <script src="./js/scrollto/jquery.scrollTo.js"></script>
+    <!--custom css & js-->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+  <body data-hijacking="off" data-animation="rotate">
+    <div class="container">
+      <!-- <section id="home" class="cd-section visible">
+        <div>
+          <h2>home</h2>
+        </div>
+      </section> -->
+      <!-- <section id="about" class="cd-section">
+        <div>
+          <h2>about</h2>
+        </div>
+      </section> -->
+      <section id="project" class="cd-section visible">
+        <div>
+          <div class="content">
+            <div class="project-inner">
+              <input type="radio" name="tabmenu" id="tab1" checked />
+              <input type="radio" name="tabmenu" id="tab2" />
+              <input type="radio" name="tabmenu" id="tab3" />
+              <div class="tabs">
+                <div class="tab">
+                  <div class="project-info" data-text="01">
+                    <h3>Project : Glass Wall Architecture</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iste blanditiis cumque nulla iure placeat cum repudiandae.
+                      Atque, eum? Excepturi minus quaerat nulla velit similique
+                      debitis iure, explicabo maxime modi laboriosam. Harum
+                      distinctio fuga nesciunt iure corporis vero inventore,
+                      numquam odio! Illum alias, aspernatur est voluptatem modi
+                      magni quis repellendus natus at dolorem molestias cum, id
+                      sed. Quaerat distinctio eos provident. Illum, ut nobis
+                      autem quibusdam necessitatibus explicabo at sequi officiis
+                      obcaecati sapiente quas amet expedita rerum debitis
+                      nostrum fuga. Omnis error deleniti nobis nihil. Suscipit
+                      excepturi ipsam velit at praesentium?
+                    </p>
+                    <ul>
+                      <li><b>Area</b> : 1670 m2</li>
+                      <li><b>Completed Date</b>Members</li>
+                      <li><b>fsdffsfssdsdf</b>svsd</li>
+                    </ul>
+                    <div class="detail">
+                      <div><span>225</span>WORKING DAY</div>
+                      <div><span>350</span>WORKING DAY</div>
+                      <div><span>3M</span>WORKING DAY</div>
+                    </div>
+                    <a class="view-project" href="#"
+                      >View Project
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                  <div class="project-photo">
+                    <img src="./images/project-main-01-01.jpg" alt="p01" />
+                    <img src="./images/project-main-01-02.jpg" alt="p02" />
+                    <img src="./images/project-main-01-03.jpg" alt="p03" />
+                    <img src="./images/project-main-01-04.jpg" alt="p04" />
+                  </div>
+                </div>
+                <div class="tab">
+                  <div class="project-info" data-text="02">
+                    <h3>Project : Glass Wall Architecture</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iste blanditiis cumque nulla iure placeat cum repudiandae.
+                      Atque, eum? Excepturi minus quaerat nulla velit similique
+                      debitis iure, explicabo maxime modi laboriosam. Harum
+                      distinctio fuga nesciunt iure corporis vero inventore,
+                      numquam odio! Illum alias, aspernatur est voluptatem modi
+                      magni quis repellendus natus at dolorem molestias cum, id
+                      sed. Quaerat distinctio eos provident. Illum, ut nobis
+                      autem quibusdam necessitatibus explicabo at sequi officiis
+                      obcaecati sapiente quas amet expedita rerum debitis
+                      nostrum fuga. Omnis error deleniti nobis nihil. Suscipit
+                      excepturi ipsam velit at praesentium?
+                    </p>
+                    <ul>
+                      <li><b>Area</b> : 1670 m2</li>
+                      <li><b>Completed Date</b>Members</li>
+                      <li><b>fsdffsfssdsdf</b>svsd</li>
+                    </ul>
+                    <div class="detail">
+                      <div><span>225</span>WORKING DAY</div>
+                      <div><span>350</span>WORKING DAY</div>
+                      <div><span>3M</span>WORKING DAY</div>
+                    </div>
+                    <a class="view-project" href="#"
+                      >View Project
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                  <div class="project-photo">
+                    <img src="./images/project-main-02-01.jpg" alt="p01" />
+                    <img src="./images/project-main-02-02.jpg" alt="p02" />
+                    <img src="./images/project-main-02-03.jpg" alt="p03" />
+                    <img src="./images/project-main-02-04.jpg" alt="p04" />
+                  </div>
+                </div>
+                <div class="tab">
+                  <div class="project-info" data-text="03">
+                    <h3>Project : Glass Wall Architecture</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iste blanditiis cumque nulla iure placeat cum repudiandae.
+                      Atque, eum? Excepturi minus quaerat nulla velit similique
+                      debitis iure, explicabo maxime modi laboriosam. Harum
+                      distinctio fuga nesciunt iure corporis vero inventore,
+                      numquam odio! Illum alias, aspernatur est voluptatem modi
+                      magni quis repellendus natus at dolorem molestias cum, id
+                      sed. Quaerat distinctio eos provident. Illum, ut nobis
+                      autem quibusdam necessitatibus explicabo at sequi officiis
+                      obcaecati sapiente quas amet expedita rerum debitis
+                      nostrum fuga. Omnis error deleniti nobis nihil. Suscipit
+                      excepturi ipsam velit at praesentium?
+                    </p>
+                    <ul>
+                      <li><b>Area</b> : 2345 m2</li>
+                      <li><b>Completed Date</b>Aprill 2023</li>
+                      <li><b>Architect</b>Robert kim</li>
+                    </ul>
+                    <div class="detail">
+                      <div><span>321</span>WORKING DAY</div>
+                      <div><span>420</span>MEMBERS</div>
+                      <div><span>8M</span>BUDGET</div>
+                    </div>
+                    <a class="view-project" href="#"
+                      >View Project
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                  <div class="project-photo">
+                    <img src="./images/project-main-03-01.jpg" alt="p01" />
+                    <img src="./images/project-main-03-02.jpg" alt="p02" />
+                    <img src="./images/project-main-03-03.jpg" alt="p03" />
+                    <img src="./images/project-main-03-04.jpg" alt="p04" />
+                  </div>
+                </div>
+              </div>
+              <div class="btn">
+                <label for="tab1"></label>
+                <label for="tab2"></label>
+                <label for="tab3"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section id="plan" class="cd-section">
+        <div>
+          <div class="content">
+            <div class="plan-inner">
+              <div class="plan-feature">
+                <div class="plan-info">
+                  <div class="plan-heading">
+                    <h2>
+                      Planning <br />
+                      For the Next Project
+                    </h2>
+                    <hr class="bar" />
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dolores ipsa veritatis error, exercitationem autem hic
+                      quae itaque sit, aliquid obcaecati provident ducimus
+                      facilis laudantium, unde rem consequuntur sapiente maxime
+                      rerum? Placeat, vitae officia! Voluptas eius eos sint quas
+                      veniam libero, voluptatem consectetur, inventore quam,
+                      nostrum rem iste praesentium aspernatur hic dignissimos
+                      quasi sed sit omnis doloribus saepe laborum et officiis!
+                      Dolorum ex sit reprehenderit nesciunt quod, quo ipsam
+                      placeat. Similique odio consequatur voluptatibus veniam
+                      error tempore ipsa laborum, accusantium quos? Pariatur
+                      commodi perferendis aspernatur quidem aliquid fugit
+                      maiores veritatis voluptatum.
+                    </p>
+                  </div>
+                  <div class="plan-photo">
+                    <img src="./images/plan-main-01.jpg" alt="plan01" />
+                  </div>
+                </div>
+                <div class="history-info">
+                  <h2>History</h2>
+                  <hr class="bar" />
+                  <div class="history-slider">
+                    <div>
+                      <h4>
+                        The Project <br />
+                        of Architect for the <span>2024</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Delectus optio ipsa aperiam est rerum asperiores
+                        sint. Sapiente sed, aut assumenda, facilis cumque
+                        distinctio laboriosam dolore velit iste, pariatur vero
+                        voluptates?
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />
+                        of Architect for the <span>2023</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Delectus optio ipsa aperiam est rerum asperiores
+                        sint. Sapiente sed, aut assumenda, facilis cumque
+                        distinctio laboriosam dolore velit iste, pariatur vero
+                        voluptates?
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />
+                        of Architect for the <span>2022</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Delectus optio ipsa aperiam est rerum asperiores
+                        sint. Sapiente sed, aut assumenda, facilis cumque
+                        distinctio laboriosam dolore velit iste, pariatur vero
+                        voluptates?
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />
+                        of Architect for the <span>2021</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Delectus optio ipsa aperiam est rerum asperiores
+                        sint. Sapiente sed, aut assumenda, facilis cumque
+                        distinctio laboriosam dolore velit iste, pariatur vero
+                        voluptates?
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />
+                        of Architect for the <span>2020</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Delectus optio ipsa aperiam est rerum asperiores
+                        sint. Sapiente sed, aut assumenda, facilis cumque
+                        distinctio laboriosam dolore velit iste, pariatur vero
+                        voluptates?
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />
+                        of Architect for the <span>2019</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Delectus optio ipsa aperiam est rerum asperiores
+                        sint. Sapiente sed, aut assumenda, facilis cumque
+                        distinctio laboriosam dolore velit iste, pariatur vero
+                        voluptates?
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />
+                        of Architect for the <span>2018</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Delectus optio ipsa aperiam est rerum asperiores
+                        sint. Sapiente sed, aut assumenda, facilis cumque
+                        distinctio laboriosam dolore velit iste, pariatur vero
+                        voluptates?
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />
+                        of Architect for the <span>2017</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Delectus optio ipsa aperiam est rerum asperiores
+                        sint. Sapiente sed, aut assumenda, facilis cumque
+                        distinctio laboriosam dolore velit iste, pariatur vero
+                        voluptates?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- <section id="awards" class="cd-section">
+        <div>
+          <div class="content">
+            <div class="awards-inner">
+              <div class="about-awards">
+                <div class="about-heading">
+                  <h2>2024<br />Architecture Award<br />Winner</h2>
+                  <hr class="bar" />
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Magnam beatae nulla, eum saepe mollitia praesentium
+                    laudantium ad labore neque fugiat maiores molestiae dolorum
+                    provident doloribus sequi pariatur, eos cupiditate
+                    quidem.Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Magnam beatae nulla, eum saepe mollitia praesentium
+                    laudantium ad labore neque fugiat maiores molestiae dolorum
+                    provident doloribus sequi pariatur, eos cupiditate quidem.
+                  </p>
+                  <a class="view-awards" href="#" target="_blank">
+                    VIEW THE AWARDS
+                  </a>
+                </div>
+              </div>
+              <div class="victory-jump">
+                <img src="./images/victory-jump.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="location" class="cd-section">
+        <div>
+          <div class="content">
+            <div class="location-inner">
+              <div class="feature">
+                <div class="office">
+                  <div class="headquaters">
+                    <b>CREATIVE DESIGN GROUP</b>
+                    <h2>Headquaters</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores quibusdam laudantium incidunt perspiciatis
+                      alias cupiditate officia delectus facere quod labore rem
+                      impedit culpa reiciendis dignissimos, consectetur ex
+                      numquam, error vitae!
+                    </p>
+                    <span>
+                      Address: 309, New Cavendish St, EC1Y 3WK / Tel : 0800 214
+                    </span>
+                  </div>
+                  <div class="customer">
+                    <b>THE PROTECT WAY</b>
+                    <h2>Customer Service</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores quibusdam laudantium incidunt perspiciatis
+                      alias cupiditate officia delectus facere quod labore rem
+                      impedit culpa reiciendis dignissimos, consectetur ex
+                      numquam, error vitae!
+                    </p>
+                    <span>
+                      Address: 11, Fifth Ave, EC1Y 3WK / Tel : 0800 214
+                    </span>
+                  </div>
+                </div>
+                <div class="service">
+                  <div class="service-item">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>Bulit and natural contexts</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                  <div class="service-item">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <h3>Landscape design</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                  <div class="service-item">
+                    <i class="fa-solid fa-cube"></i>
+                    <h3>Every building site unique</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="cd-section">
+        <div>
+          <div class="content">
+            <div class="contact-inner">
+              <div class="contact-feature">
+                <div class="contact-form">
+                  <h3><b>Contact</b>us</h3>
+                  <p>Feel free to ask for details, Dont'save my questions.</p>
+                  <form
+                    class="send-box"
+                    action="http://localhost/3000/contactpage"
+                    method="post"
+                  >
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" type="email" />
+                    <label for="subject">Subject <span>*</span></label>
+                    <input id="subject" type="text" />
+                    <label for="message">Message <span>*</span></label>
+                    <textarea
+                      name="message"
+                      id="massage"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                    <input type="submit" value="send message" />
+                  </form>
+                </div>
+                <div class="contact-info">
+                  <h4>Our <b>Office</b></h4>
+                  <ul>
+                    <li>Adress : 309, New Cavendish St, EC1Y 3WK</li>
+                    <li>Phone : 0800 214 5252</li>
+                    <li>Email : abcdef@google.com</li>
+                  </ul>
+                  <h4>Business <b>Hours</b></h4>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-clock"></i>
+                      Monday- Friday : 9am to 5pm
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-clock"></i>
+                      Saturday : 9am to 2pm
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-clock"></i>
+                      Sunday : Closed
+                    </li>
+                  </ul>
+                  <h4>Get in <b>Touch</b></h4>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quasi, odio cupiditate veniam nesciunt dolorem repudiandae
+                    sit sequi fuga corrupti, distinctio, blanditiis id
+                    dignissimos! Ducimus quo aut sapiente, quis totam explicabo!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </div>
+
+    <nav>
+      <ul class="cd-vertical-nav">
+        <li><a href="#0" class="cd-prev inactive">Next</a></li>
+        <li><a href="#0" class="cd-next">Prev</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
