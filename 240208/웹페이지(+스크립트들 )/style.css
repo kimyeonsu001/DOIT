@@ -44,6 +44,164 @@ body {
   overflow: hidden;
 }
 
+.home-inner {
+  background: #fff;
+  height: 100%;
+}
+.home-inner::before {
+  content: "";
+  background: #000;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: overlay 1s 2s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes overlay {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 50px/5rem "Source Code Pro";
+  text-align: center;
+  margin: 0;
+  animation: slideup 2s linear;
+  animation-fill-mode: both;
+}
+.welcome-text span {
+  display: block;
+  font-size: 26px;
+}
+
+.welcome-text span .fa-solid {
+  color: rgb(255, 230, 42);
+}
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  20% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  80% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 0;
+    margin-top: 0;
+  }
+}
+.opacity-image {
+  background: url(./images/section-bg-01.jpg) no-repeat center/cover;
+  height: 100%;
+  opacity: 0;
+  animation: opacity-image 1s 2.5s ease-in;
+  animation-fill-mode: both;
+}
+@keyframes opacity-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-heading span {
+  display: block;
+  font: 600 115px/12rem "Montserrat";
+  color: #fff;
+  width: 0;
+  overflow: hidden;
+  animation: reveal 1s 3s ease-in-out;
+  animation-fill-mode: both;
+}
+
+.home-heading span:nth-child(1) {
+  animation-delay: 3s;
+}
+.home-heading span:nth-child(2) {
+  animation-delay: 3.2s;
+}
+.home-heading span:nth-child(3) {
+  animation-delay: 3.3s;
+}
+@keyframes reveal {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/** ############ section about###########*/
+.about-inner {
+  background: #0dace3 url(./images/line-drawing.png) no-repeat right bottom;
+  height: 100%;
+}
+.about-items {
+  width: 45%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-left: 150px;
+}
+.item {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.item img {
+  filter: invert(1);
+  height: 100vh;
+  float: left;
+  margin-right: 20px;
+  transition: all 0.5s;
+  letter-spacing: -1px;
+}
+.item:hover img {
+  filter: invert(0);
+}
+.item h3 {
+  font: 500 28px/1 "Montserrat";
+}
+
+.item:hover h3 {
+  color: #000;
+}
+.item p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
 /* ##### Section : Project ##### */
 .project-inner {
   height: 100%;
@@ -70,13 +228,9 @@ input[name="tabmenu"] {
   float: left;
   height: 100%;
 }
-.project-info {
-  width: 25%;
-}
 .project-photo {
   width: 75%;
 }
-
 .btn {
   position: absolute;
   left: 0;
@@ -92,8 +246,8 @@ input[name="tabmenu"] {
   border-radius: 100%;
   margin: 8px;
   cursor: pointer;
+  position: relative;
 }
-
 .btn label::before {
   content: "";
   display: inline-block;
@@ -124,19 +278,43 @@ input[id="tab3"]:checked ~ .tabs {
   margin-left: -200%;
 }
 
-/* project-info*/
+/*featherlight css*/
+.featherlight .featherlight-content {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+.featherlight-content iframe {
+  width: 100%;
+  height: 100%;
+}
+.featherlight .featherlight-close-icon {
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  line-height: 25px;
+  width: 25px;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  font-size: 30px;
+}
+
+/* project-info */
 .project-info {
   width: 25%;
   padding: 50px;
   position: relative;
 }
-
 .project-info h3 {
   font-size: 20px;
   position: relative;
 }
 .project-info p {
-  font-size: 16px/1.5rem "Montserrat";
+  font: 16px/1.5rem "Montserrat";
   margin: 20px 0;
   position: relative;
 }
@@ -145,7 +323,7 @@ input[id="tab3"]:checked ~ .tabs {
   line-height: 2rem;
 }
 .project-info ul li::before {
-  content: "";
+  content: "\f105";
   font-family: fontawesome;
   margin-right: 10px;
 }
@@ -173,15 +351,15 @@ input[id="tab3"]:checked ~ .tabs {
   display: inline-block;
   width: 220px;
   text-align: center;
-  transition: all 0.3s;
-}
-.view-project .fa-solid {
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .view-project:hover {
   background: #000;
 }
-.view-project:hover .fa-solid {
+.view-project .fa {
+  transition: all 0.5s;
+}
+.view-project:hover .fa {
   margin-left: 30px;
 }
 .project-info::before {
@@ -193,8 +371,9 @@ input[id="tab3"]:checked ~ .tabs {
   color: #eee;
 }
 
-/* ##### Section : plan ##### */
+/* ##### Section : Plan ##### */
 
+/* plan-info */
 .plan-inner {
   background: #1d1b24;
   height: 100%;
@@ -238,7 +417,8 @@ input[id="tab3"]:checked ~ .tabs {
 .plan-photo img {
   height: 265px;
 }
-/*history-info*/
+
+/* history-info */
 .history-slider div h4 {
   color: #fff;
   font: normal 20px/1.5rem "Montserrat";
@@ -251,7 +431,7 @@ input[id="tab3"]:checked ~ .tabs {
   font: 16px/1.5rem "Montserrat";
 }
 
-/*slick.js*/
+/* slick.js */
 .history-slider .slick-arrow {
   display: none !important;
 }
@@ -323,9 +503,9 @@ hr.bar {
   width: 80%;
 }
 
-/* ##### Section : location ##### */
+/* ##### Section : Location ##### */
 .location-inner {
-  background: url(./images/background-location.jpg) center/cover no-repeat;
+  background: url("./images/background-location.jpg") center/cover no-repeat;
   height: 100%;
   position: relative;
 }
@@ -350,6 +530,8 @@ hr.bar {
 .feature > div {
   float: left;
 }
+
+/* office */
 .office {
   width: 60%;
   padding-right: 100px;
@@ -371,14 +553,15 @@ hr.bar {
   display: block;
   margin-bottom: 24px;
 }
-/*service*/
+
+/* service */
 .service {
   width: 40%;
 }
 .service-item {
   margin-bottom: 40px;
 }
-.service-item .fa-solid {
+.service-item .fas {
   color: #1db1f0;
   font-size: 40px;
 }
@@ -387,7 +570,8 @@ hr.bar {
   font-size: 22px;
   margin: 14px 0;
 }
-/* ##### section : contact #####*/
+
+/* ##### Section : Contact ##### */
 .contact-inner {
   background: #fff;
   height: 100%;
@@ -407,7 +591,7 @@ hr.bar {
   padding: 20px;
 }
 
-/* contact-form*/
+/* cotact-form */
 .contact-form h3 {
   font: normal 30px/1.5rem "Montserrat";
 }
@@ -417,7 +601,7 @@ hr.bar {
 .send-box label {
   display: block;
   font: bold 16px/1 "Montserrat";
-  margin: 10px 0 10px;
+  margin: 20px 0 10px;
 }
 .send-box label span {
   color: crimson;
@@ -430,7 +614,7 @@ hr.bar {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .send-box input[type="email"]:hover,
 .send-box input[type="text"]:hover,
@@ -448,17 +632,18 @@ hr.bar {
   background: #0088cc;
   color: #fff;
   text-transform: uppercase;
-  padding: 12px 20px;
   margin-top: 10px;
+  padding: 12px 20px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.5s;
 }
 .send-box input[type="submit"]:hover {
   background: #000;
 }
-/* contact-info*/
+
+/* contact-info */
 .contact-info h4 {
   font: normal 20px/1 "Montserrat";
   margin: 20px 0 5px;
