@@ -1,0 +1,16 @@
+@import url(./reset.css);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  background: #35a553;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
